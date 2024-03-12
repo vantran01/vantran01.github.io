@@ -1,29 +1,50 @@
-body, h1, h2, h3, p {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 .resume {
-    font-family: Arial, sans-serif;
     color: #000;
     background-color: #fff;
-    max-width: 800px;
+    max-width: 960px;
     margin: auto;
-    border: 1px solid #000;
+    display: flex;
+}
+
+.left-column, .right-column {
+    width: 50%;
+}
+
+.left-column {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.right-column {
+    padding: 20px;
+    border-left: 2px solid #000;
+}
+
+.profile-photo {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .resume-header {
     text-align: center;
-    padding: 20px;
-    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
 }
 
 .resume-header h1 {
+    font-size: 24px;
     margin-bottom: 5px;
 }
 
-.resume-body {
-    padding: 15px;
+.resume-header p {
+    font-size: 16px;
 }
 
 section {
@@ -31,18 +52,17 @@ section {
 }
 
 section h2 {
-    background-color: #000;
-    color: #fff;
-    padding: 5px 10px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-.personal-info p, .work-experience div, .education, .skills, .activities, .awards, .certifications {
-    padding-left: 10px;
+.personal-info p, .skills p, .contact-info p {
+    margin-bottom: 10px;
 }
 
-.work-experience h3, .work-experience p {
+.work-experience h3, .work-experience p, .education h3, .education p {
     margin-bottom: 5px;
 }
 
-/* Add additional styles as needed */
+/* Additional styles */
+/* Add media queries for responsiveness if necessary */
