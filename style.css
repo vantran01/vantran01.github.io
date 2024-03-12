@@ -1,35 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-header, section, footer {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
+.resume {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #000;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-.header h1, .header p, footer p {
+.resume-header {
     text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+    position: relative;
 }
 
-.job, .school {
-    margin-bottom: 15px;
+.resume-header .profile-picture {
+    width: 150px; /* Adjust as necessary */
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
-.dates {
-    font-style: italic;
-    font-size: 0.9em;
-    color: #666;
+.resume-header h1 {
+    margin-top: 0;
+    padding-top: 80px; /* Adjust so the text doesn't overlap the image */
 }
 
-ul {
-    padding-left: 20px;
+.resume-body {
+    padding: 15px;
 }
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+/* Add additional styles as needed */
