@@ -1,49 +1,68 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset một số styles mặc định */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Thêm padding xung quanh các phần của trang */
 header, section, footer {
-    margin: 20px;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 20px auto; /* Tự động căn giữa */
+    max-width: 800px; /* Giới hạn chiều rộng tối đa */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Thêm bóng đổ nhẹ */
 }
 
+/* Styles cho header */
+header img {
+    display: block;
+    margin: 0 auto 20px; /* Căn giữa và thêm khoảng cách phía dưới */
+    width: 100px; /* Đặt chiều rộng cho ảnh */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+    border-radius: 50%; /* Làm tròn ảnh */
+}
+
+header h1, header p {
+    text-align: center;
+    margin-bottom: 10px; /* Thêm khoảng cách giữa tiêu đề và mô tả */
+}
+
+/* Styles cho các tiêu đề */
 h1, h2 {
     color: #333;
 }
 
-header img {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 100px;
-    border-radius: 50%;
-}
-
-header h1, header p, footer p {
-    text-align: center;
+/* Styles cho phần thông tin cá nhân và kinh nghiệm */
+section {
+    margin-bottom: 20px; /* Thêm khoảng cách giữa các phần */
 }
 
 .job, .school, .project {
     margin-bottom: 15px;
 }
 
-.dates {
-    font-style: italic;
+.dates, .job p, .school p, .project p {
     font-size: 0.9em;
     color: #666;
+    margin-bottom: 5px; /* Thêm khoảng cách dưới mỗi mục */
 }
 
 ul {
-    padding-left: 20px;
+    margin-bottom: 15px; /* Thêm khoảng cách dưới danh sách */
+    padding-left: 20px; /* Thêm indent cho các mục li */
 }
 
+/* Links styling */
 a {
-    color: #007bff;
+    color: #333;
     text-decoration: none;
 }
 
@@ -51,7 +70,9 @@ a:hover {
     text-decoration: underline;
 }
 
-.project h3 a {
-    font-size: 1em;
-    color: #333;
+/* Styles cho footer */
+footer p {
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
 }
