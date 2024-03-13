@@ -62,11 +62,12 @@ ul {
 
 /* Links styling */
 a {
-    color: #333;
+    color: #000; /* Đặt màu mặc định cho liên kết */
     text-decoration: none;
 }
 
 a:hover {
+    color: #777; /* Màu khi di chuột qua */
     text-decoration: underline;
 }
 
