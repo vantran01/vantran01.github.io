@@ -30,13 +30,13 @@ header {
 
 header img {
     /* Tăng kích thước ảnh cá nhân */
-    width: 180px; /* Đặt chiều rộng mới */
+    width: 250px; /* Đặt chiều rộng mới */
     height: auto; /* Tự động điều chỉnh chiều cao */
     border-radius: 50%; /* Làm tròn ảnh */
 }
 
 header h1, header p {
-    text-align: right; /* Cân lề phải cho tên và mô tả */
+    text-align: center; /* Cân lề phải cho tên và mô tả */
     margin-bottom: 10px; /* Thêm khoảng cách giữa tiêu đề và mô tả */
 }
 
