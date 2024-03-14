@@ -1,4 +1,10 @@
-/* Reset một số styles mặc định */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -11,39 +17,52 @@ body {
     line-height: 1.6;
 }
 
-/* Thêm padding xung quanh các phần của trang */
 header, section, footer {
     padding: 20px;
-    margin: 20px auto; /* Tự động căn giữa */
-    max-width: 800px; /* Giới hạn chiều rộng tối đa */
+    margin: 20px auto;
+    max-width: 800px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Thêm bóng đổ nhẹ */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Styles cho header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 header img {
-    display: block;
-    margin: 0 auto 20px; /* Căn giữa và thêm khoảng cách phía dưới */
-    width: 150px; /* Đặt chiều rộng cho ảnh */
-    height: auto; /* Tự động điều chỉnh chiều cao */
-    border-radius: 50%; /* Làm tròn ảnh */
+    border-radius: 50%;
+    margin-left: 10px; 
+    margin-right: 50px;
+    width: 100px;
+    height: auto;
 }
 
+header .profile-info {
+    flex-grow: 1;
+}
 
 header h1, header p {
-    text-align: center;
-    margin-bottom: 10px; /* Thêm khoảng cách giữa tiêu đề và mô tả */
+    margin: 0;
+    text-align: left;
 }
 
-/* Styles cho các tiêu đề */
+header h1 {
+    font-size: 38px;
+}
+
+header p {
+    font-size: 16px;
+}
+
 h1, h2 {
     color: #333;
 }
 
-/* Styles cho phần thông tin cá nhân và kinh nghiệm */
 section {
-    margin-bottom: 20px; /* Thêm khoảng cách giữa các phần */
+    margin-bottom: 20px;
 }
 
 .job, .school, .project {
@@ -53,17 +72,16 @@ section {
 .dates, .job p, .school p, .project p {
     font-size: 0.9em;
     color: #666;
-    margin-bottom: 5px; /* Thêm khoảng cách dưới mỗi mục */
+    margin-bottom: 5px;
 }
 
 ul {
-    margin-bottom: 15px; /* Thêm khoảng cách dưới danh sách */
-    padding-left: 20px; /* Thêm indent cho các mục li */
+    margin-bottom: 15px;
+    padding-left: 20px;
 }
 
-/* Links styling */
 a {
-    color: #007bff; /* Màu xanh cho liên kết */
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -71,7 +89,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Styles cho footer */
 footer p {
     text-align: center;
     color: #666;
