@@ -25,7 +25,7 @@ header, section, footer {
 header img {
     display: block;
     margin: 0 auto 20px; /* Căn giữa và thêm khoảng cách phía dưới */
-    width: 100px; /* Đặt chiều rộng cho ảnh */
+    width: 150px; /* Đặt chiều rộng cho ảnh */
     height: auto; /* Tự động điều chỉnh chiều cao */
     border-radius: 50%; /* Làm tròn ảnh */
 }
