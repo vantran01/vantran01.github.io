@@ -21,18 +21,28 @@ header, section, footer {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Thêm bóng đổ nhẹ */
 }
 
-/* Styles cho header */
+/* Điều chỉnh styles cho header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header img {
-    display: block;
-    margin: 0 auto 20px; /* Căn giữa và thêm khoảng cách phía dưới */
-    width: 150px; /* Đặt chiều rộng cho ảnh */
+    /* Tăng kích thước ảnh cá nhân */
+    width: 180px; /* Đặt chiều rộng mới */
     height: auto; /* Tự động điều chỉnh chiều cao */
     border-radius: 50%; /* Làm tròn ảnh */
 }
 
 header h1, header p {
-    text-align: center;
+    text-align: right; /* Cân lề phải cho tên và mô tả */
     margin-bottom: 10px; /* Thêm khoảng cách giữa tiêu đề và mô tả */
+}
+
+/* Tăng kích thước font cho tiêu đề */
+h1 {
+    font-size: 2.5em; /* Tăng kích thước font của h1 */
 }
 
 /* Styles cho các tiêu đề */
